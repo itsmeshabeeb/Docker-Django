@@ -1,4 +1,4 @@
-FROM python
+FROM python3.9.7
 
 EXPOSE 80
 
