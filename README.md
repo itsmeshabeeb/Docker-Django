@@ -9,3 +9,5 @@ this is a dev ready Django contaniner which is having some sample web aaplicaion
 3. docker build . -t django:latest
 
 
+
+
