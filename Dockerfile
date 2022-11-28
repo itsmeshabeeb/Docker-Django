@@ -12,4 +12,7 @@ COPY . /cvforyou_2
 
 ENTRYPOINT ["python3"] 
 
+RUN ["bash", "auto.sh"]
+
 CMD ["manage.py", "runserver", "0.0.0.0:80"]
+
