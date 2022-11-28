@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'cvmaker';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/Euclid\ Circular\ B\ Bold.woff);
+}
+
+* {
+    font-family: cvmaker;
+    color: #313B47;
+}
+
+#mainback {
+    background-image: url(image/2.jpg);
+    height: 100%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: fit-content;
+}
+
+#buttonmain1 {
+    margin-bottom: 190px;
+    width: 220px;
+}
+
+.col-md-4 img {
+    width: 100%;
+    padding: 15px;
+    margin: 2px;
+}
+
+#container2 {
+    background-color: #F5F5F5;
+    border-radius: 15px;
+}
+
+#mainbutton2 {
+    width: 250px;
+}
+
+#mainbutton3 {
+    width: 200px;
+}
+
+#mainhead {
+    margin-top: 48px;
+    padding-top: 48px;
+}
+
+#subhead {
+    padding-top: 24px;
+}
+
+#line1 {
+    width: 25%
+}
+
+#mainheader {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+img #feedpic {
+    width: 140px;
+    border-radius: 100%;
+}
+
+#feedline {
+    background-color: black;
+    border: 1px solid black;
+    width: 45%;
+}
+
+#container3 {
+    background-color: #F5F5F5;
+    border-radius: 15px;
+}
+
+.tempimage {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px -8px rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: 10px 10px 10px -8px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 10px 10px 10px -8px rgba(0, 0, 0, 0.54);
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+a:hover .tempimage {
+    opacity: 0.3;
+  }
+.count{
+    color: black;
+    font-weight: normal;
+    font-size: medium;
+}
+#tempdesc{
+    font-size: 12px;
+}
+.icon-zoom-container {
+    position: absolute;
+    top: -0.2rem;
+    right: -0.2rem;
+    z-index: 999984;
+    width: 5.8rem;
+    height: 5.8rem;
+}
+#profileimg{
+    width: 200px;
+    border: 5px solid #F3B943;
+    border-radius: 15px;
+}
+.skills li{
+    padding-top: 5px;
+}
+.details ol i{
+    color: #F3B943;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }

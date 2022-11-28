@@ -1,0 +1,111 @@
+{% extends 'masterstaff.html' %}
+{% load static %}
+{% block content  %}
+
+
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Templates Details</h1>
+    <div class="btn-toolbar mb-2 mb-md-0 ">
+       
+
+
+        
+        
+        <button type="button" class="btn btn-sm btn-outline-success dropdown-toggle" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Filter
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="#">Standard</a></li>
+            <li><a class="dropdown-item" href="#">Premium</a></li>
+        </ul>
+        <div class="">
+          <a href="templatedetails"><button type="button" class="btn btn-sm btn-outline-success" >Go Back</button></a>
+        </div>
+    </div>
+</div>
+
+<!-- content -->
+<div class="container mt-6">
+    <div class="row">
+        <div class="col-lg-3 ">
+            <a href="resume1"><img src="{% static 'image/temp1.png' %}" alt="" class="tempimage"></a>
+            <div class="">
+                <small class="fw-bold fs-4 ml-4">Tech <span class="count">&nbsp; 1/12</span></small>
+                <p id="tempdesc">Apply and get shortlisted for tech jobs with the tech resume template that will impress
+                    hiring managers.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-3 w-25">
+            <img src="{% static 'image/temp2.png' %}" alt="" class="tempimage">
+            <div class="">
+                <small class="fw-bold fs-4 ml-4">Skill-Based<span class="count">&nbsp; 2/12</span></small>
+                <p id="tempdesc">A skill-based resume created especially for the job-seekers that are pursuing a career
+                    change or are recent graduates.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <img src="{% static 'image/temp3.png' %}" alt="" class="tempimage">
+            <div class="">
+                <small class="fw-bold fs-4 ml-4">Basic<span class="count">&nbsp; 3/12</span></small>
+                <p id="tempdesc">Easily personalize this basic resume layout that can be completed in under ten minutes
+                    through our intuitive process.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <img src="{% static 'image/temp4.png' %}" alt="" class="tempimage">
+            <div class="">
+                <small class="fw-bold fs-4 ml-4">Executive<span class="count">&nbsp; 4/12</span></small>
+                <p id="tempdesc">Executive resume sample with a contemporary approach and eye-catching design that makes
+                    sure your application will be spotted first.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col-lg-3 ">
+            <img src="{% static 'image/temp5.png' %}" alt="" class="tempimage">
+            <div class="">
+                <small class="fw-bold fs-4 ml-4">General<span class="count">&nbsp; 5/12</span></small>
+                <p id="tempdesc">This general format can be tailored according to your personality and skills to apply
+                    for jobs in most industries.
+
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-3 w-25">
+            <img src="{% static 'image/temp6.png' %}" alt="" class="tempimage">
+            <div class="">
+                <small class="fw-bold fs-4 ml-4">Hybrid<span class="count">&nbsp; 6/12</span></small>
+                <p id="tempdesc">A skill-based resume created especially for the job-seekers that are pursuing a career
+                    change or are recent graduates.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <img src="{% static 'image/temp7.png' %}" alt="" class="tempimage">
+            <div class="">
+                <small class="fw-bold fs-4 ml-4">College<span class="count">&nbsp; 7/12</span></small>
+                <p id="tempdesc">An updated and contemporary version of the 21st-century college resume template, being
+                    an alternative to the old styles.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <img src="{% static 'image/temp8.png' %}" alt="" class="tempimage">
+            <div class="">
+                <small class="fw-bold fs-4 ml-4">Creative<span class="count">&nbsp; 8/12</span></small>
+                <p id="tempdesc">Land your dream job in the creative industries by using this creative resume template,
+                    which will make your application stand out.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock  %}

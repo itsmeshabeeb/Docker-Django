@@ -1,0 +1,475 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+
+
+<center><br><br><br>
+    <h1 class="pt-5 mt-4">My Experiences</h1>
+</center>
+
+<div class="container mx-auto mt-5 position-relative w-75" >
+    <div class=" position-relative">
+        <button class="btn btn-outline-success w-100 text-start btn-lg" type="button">
+            <i class="fas fa-user-graduate text-white">&nbsp;&nbsp;&nbsp;</i>Education and Qualifications
+        </button>
+        <!-- <ul class=" w-100" >
+          <li><a class="-item" href="#">Action</a></li>
+          <li><a class="-item" href="#">Another action</a></li>
+          <li><a class="-item" href="#">Something else here</a></li>
+        </ul> -->
+        <div class=" w-100 p-3 position-relative" aria-labelledby="">
+            <hr class="w-100 mx-auto">
+            <div class="row mb-4 ">
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1">Degree</label>
+                        <input type="text" id="" placeholder="e.g Bachelor of Science" class="form-control" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example2">City/Town</label>
+                        <input type="text" placeholder="e.g San Francisco" id="" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-outline mb-4 position-relative">
+                <label class="form-label" for="form3Example3">School</label>
+                <input type="email" id="form3Example3" class="form-control" placeholder="e.g New york University" />
+            </div>
+            <!-- start date -->
+            <div class="row mb-4 position-relative">
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1">Start Date</label>
+                        <div class="d-inline-flex w-100">
+                            <select class="form-control form-select-custom ">
+                                <option value="0">Month</option>
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>&nbsp;&nbsp;
+                            <select class="form-select-custom form-control" name="meta.dateOfBirthYear">
+                                <option value="0">Year</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                                <option value="1983">1983</option>
+                                <option value="1982">1982</option>
+                                <option value="1981">1981</option>
+                                <option value="1980">1980</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End date -->
+                <div class="col position-relative">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1">End Date</label>
+                        <div class="d-inline-flex w-100">
+                            <select class="form-control form-select-custom ">
+                                <option value="0">Month</option>
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>&nbsp;&nbsp;
+                            <select class="form-select-custom form-control">
+                                <option value="0">Year</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Description Start -->
+                <div class="form-outline mb-4 position-relative">
+                    <label class="form-label" for="form3Example3">School</label>
+                    <input type="Text" id="form3Example3" class="form-control" placeholder="e.g New york University" />
+                </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example3">Description</label>
+                    <textarea type="Text" id="form3Example3" class="form-control" placeholder=""
+                        style="height: 150px"></textarea>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <button class="btn btn-success"><i
+                                class="far fa-lightbulb text-white">&nbsp;&nbsp;</i>Tips</button>
+                    </div>
+                </div>
+                <div class="col text-end mb-4">
+                    <div class="form-outline">
+                        <button class="btn btn-success "><i
+                                class="far fa-trash-alt text-white">&nbsp;&nbsp;</i>Delete</button>
+                        <button class="btn btn-success "><i class="far fa-save text-white"></i>&nbsp;&nbsp;Save</button>
+                    </div>
+                </div>
+                <div class="form-outline mb-4">
+                    <button class="btn btn-success w-100"><i class="fas fa-plus-circle text-white"></i>&nbsp;&nbsp;Add
+                        Another Education</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resume Objective -->
+        <div class=" pt-5 position-relative">
+            <button class="btn btn-outline-success  w-100 text-start btn-lg " type="button"
+                id="" data-bs-toggle="" aria-expanded="true">
+                <i class="fas fa-user-circle text-white">&nbsp;&nbsp;&nbsp;</i>Resume objective
+            </button>
+            <div class="-menu w-100 p-3 position-relative" aria-labelledby="">
+                <hr class="w-100 mx-auto">
+                <div class="row mb-4 position-relative">
+                    <!-- Description Start -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example3">Description</label>
+                        <textarea type="Text" id="form3Example3" class="form-control" placeholder=""
+                            style="height: 150px"></textarea>
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <button class="btn btn-success"><i
+                                    class="far fa-lightbulb text-white">&nbsp;&nbsp;</i>Tips</button>
+                        </div>
+                    </div>
+                    <div class="col text-end mb-4">
+                        <div class="form-outline">
+                            <!-- <button class="btn btn-success "><i
+                                    class="far fa-trash-alt text-white">&nbsp;&nbsp;</i>Delete</button> -->
+                            <button class="btn btn-success "><i
+                                    class="far fa-save text-white"></i>&nbsp;&nbsp;Save</button>
+                        </div>
+                    </div>
+                    <!-- <div class="form-outline mb-4">
+                        <button class="btn btn-success w-100"><i
+                                class="fas fa-plus-circle text-white"></i>&nbsp;&nbsp;Add
+                            Another Education</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- button 3 -->
+        <button class="btn btn-outline-success -toggle w-100 text-start btn-lg mt-5 position-relative" type="button"
+            id="" data-bs-toggle="" aria-expanded="true">
+            <i class="fas fa-briefcase text-white">&nbsp;&nbsp;&nbsp;</i>Work Expereience
+        </button>
+        <!-- <ul class=" w-100" >
+          <li><a class="-item" href="#">Action</a></li>
+          <li><a class="-item" href="#">Another action</a></li>
+          <li><a class="-item" href="#">Something else here</a></li>
+        </ul> -->
+        <div class="-menu w-100 p-3 position-relative" aria-labelledby="">
+            <hr class="w-100 mx-auto">
+            <div class="row mb-4 position-relative">
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1">Job tittle</label>
+                        <input type="text" id="" placeholder="e.g sales manager" class="form-control" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example2">City/Town</label>
+                        <input type="text" placeholder="e.g San Francisco" id="" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-outline mb-4 position-relative">
+                <label class="form-label" for="form3Example3">Employer</label>
+                <input type="email" id="form3Example3" class="form-control" placeholder="e.g google" />
+            </div>
+            <!-- start date -->
+            <div class="row mb-4 position-relative">
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1">Start Date</label>
+                        <div class="d-inline-flex w-100">
+                            <select class="form-control form-select-custom ">
+                                <option value="0">Month</option>
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>&nbsp;&nbsp;
+                            <select class="form-select-custom form-control" name="meta.dateOfBirthYear">
+                                <option value="0">Year</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                                <option value="1983">1983</option>
+                                <option value="1982">1982</option>
+                                <option value="1981">1981</option>
+                                <option value="1980">1980</option>
+                            </select>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End date -->
+                <div class="col position-relative">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1">End Date</label>
+                        <div class="d-inline-flex w-100">
+                            <select class="form-control form-select-custom ">
+                                <option value="0">Month</option>
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>&nbsp;&nbsp;
+                            <select class="form-select-custom form-control">
+                                <option value="0">Year</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Description Start -->
+
+                <div class="form-outline mb-4 position-relative">
+                    <label class="form-label" for="form3Example3">Description</label>
+                    <textarea type="Text" id="form3Example3" class="form-control" placeholder=""
+                        style="height: 150px"></textarea>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <button class="btn btn-success"><i
+                                class="far fa-lightbulb text-white">&nbsp;&nbsp;</i>Tips</button>
+                    </div>
+                </div>
+                <div class="col text-end mb-4">
+                    <div class="form-outline">
+                        <button class="btn btn-success "><i
+                                class="far fa-trash-alt text-white">&nbsp;&nbsp;</i>Delete</button>
+                        <button class="btn btn-success "><i class="far fa-save text-white"></i>&nbsp;&nbsp;Save</button>
+                    </div>
+                </div>
+                <div class="form-outline mb-4">
+                    <button class="btn btn-success w-100"><i class="fas fa-plus-circle text-white"></i>&nbsp;&nbsp;Add
+                        Another Work Expereince</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- skills -->
+        <button class="btn btn-outline-success -toggle w-100 text-start btn-lg mt-5 position-relative" type="button"
+            id="" data-bs-toggle="" aria-expanded="true">
+            <i class="fas fa-user-graduate text-white">&nbsp;&nbsp;&nbsp;</i>Skills
+        </button>
+        <div class="-menu w-100 p-3 position-relative" aria-labelledby="">
+            <hr class="w-100 mx-auto">
+            <div class="row mb-4 ">
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example1">Skill</label>
+                        <input type="text" id="" placeholder="e.g MIcrosoft Word" class="form-control" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <label class="form-label" for="form3Example2">Level</label>
+                        <select class="form-control" name="">
+                            <option value="0">Select level</option>
+                            <option value="100">Expert</option>
+                            <option value="75">Experienced</option>
+                            <option value="50">Skilfull</option>
+                            <option value="25">Intermediate</option>
+                            <option value="20">Beginner</option>
+                        </select>
+                    </div>
+                </div>
+            </div>  
+            <div class="form-outline mb-4">
+                <button class="btn btn-success w-100"><i class="fas fa-plus-circle text-white position-relative"></i>&nbsp;&nbsp;Add
+                    Another Skill</button>
+            </div>
+        </div>
+        <!-- Skill end Here -->
+
+        <!-- Interests starts here -->
+        <div class=" pt-5 position-relative">
+            <button class="btn btn-outline-success w-100 text-start btn-lg position-relative mx-auto" type="button"
+                id="" data-bs-toggle="" aria-expanded="true">
+                <i class="fas fa-palette text-white">&nbsp;&nbsp;&nbsp;</i>Interests
+            </button>
+            <div class="-menu w-100 p-3" aria-labelledby="">
+                <hr class="w-100 mx-auto">
+                <div class="row mb-4">
+                    <!-- Description Start -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form3Example3">Hobby</label>
+                        <input type="text" id="" placeholder="e.g Hiking" class="form-control" />
+                    </div>
+                    <div class="col">
+                        <div class="form-outline">
+                            <button class="btn btn-success"><i
+                                    class="far fa-lightbulb text-white">&nbsp;&nbsp;</i>Tips</button>
+                        </div>
+                    </div>
+                    <div class="col text-end mb-4">
+                        <div class="form-outline">
+                            <button class="btn btn-success "><i
+                                    class="far fa-trash-alt text-white">&nbsp;&nbsp;</i>Delete</button>
+                            <button class="btn btn-success "><i
+                                    class="far fa-save text-white"></i>&nbsp;&nbsp;Save</button>
+                        </div>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <button class="btn btn-success w-100"><i
+                                class="fas fa-plus-circle text-white"></i>&nbsp;&nbsp;Add Another Hobby</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interests end here -->
+        <!-- addd Extra section -->
+        <div class=" pt-5 position-relative">
+            <select class="-toggle w-100 text-start btn-lg bg-success" id=""
+                data-bs-toggle="" aria-expanded="true">
+                <option value="">+ Add extra section</option>
+                <option value="course">Courses</option>
+                <option value="availability">Achievements</option>
+                <option value="variousInformation">Publications</option>
+                <option value="single_textarea">Create custom section</option>
+            </select>
+        </div>
+    </div>
+    <center>
+        <a href="templates"> <button class="btn btn-success rounded-pill btn-lg mt-5 mb-4">Next Step&nbsp;&nbsp;<i class="fas fa-arrow-right text-white"></i>
+            </button></a><br>
+        <a href="personal" class="text-success mt-5"><i class="fas fa-arrow-left text-success"></i>&nbsp;&nbsp;Previous
+            Step</a>
+    </center>
+</div>
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,86 @@
+{% extends 'masterstaff.html' %}
+{% block content %}
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2">User Details</h1>
+  <button class="btn  btn-success dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Filter
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#"></a></li>
+    <li><a class="dropdown-item" href="#">All</a></li>
+    <li><a class="dropdown-item" href="#">Standard Users</a></li>
+    <li><a class="dropdown-item" href="#">Premium Users</a></li>
+  </ul>
+  <div class="btn-toolbar mb-2 mb-md-0">
+    
+    <div class="btn-group me-2">
+      
+      <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+    </div>
+    <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+      This week
+    </button>
+  </div>
+</div>
+
+
+<!-- <h2>Section title</h2> -->
+      <div class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Type</th>
+              <th scope="col">valid upto</th>
+              <th scope="col">Action</th>
+              <!-- <th scope="col">Action</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1,001</td>
+              <td>Niyas</td>
+              <td>niyas@gmail.com</td>
+              <td>Premium User</td>
+              <td>31/12/2021</td>
+              <td>
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Full Info</a></li>
+                  <li><a class="dropdown-item" href="#">Deactivate</a></li>
+                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                  <li><a class="dropdown-item" href="#">View cv</a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>1,002</td>
+              <td>ameen</td>
+              <td>ameen@gmail.com</td>
+              <td>free user</td>
+              <td>Null</td>
+              <td>
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Full Info</a></li>
+                  <li><a class="dropdown-item" href="#">Deactivate</a></li>
+                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                  <li><a class="dropdown-item" href="#">View cv</a></li>
+
+                </ul>
+              </td>
+              
+            </tr>
+            
+          </tbody>
+        </table>
+
+{% endblock %}

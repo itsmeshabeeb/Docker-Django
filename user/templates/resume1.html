@@ -1,0 +1,64 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block content %}
+
+<h1 class="pt-5 text-center">resume1</h1>
+<div class="resume container  pt-5">
+
+    <div class="row ">
+        <div class="col-8 d-flex p-4 rounded-3 border-end border-5 border-white" style="background-color: #EBEBEB;">
+            <div class="col-4 ">
+                <div class="headsection">
+                    <img src="{% static 'image/cvprofile.jpg' %}" class="" alt="" id="profileimg">
+                </div>
+            </div>
+            <div class=" col-8 rounded-3">
+                <div class="maindetail">
+                    <h3>Shabeeb M</h3>
+                    <small style="color: #F3B943;">Full Stack Developer</small>
+                    <br><br>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facilis ea sunt dicta nulla
+                        officiis laudantium repudiandae assumenda distinctio cumque!Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Dolore facilis ea sunt dicta nulla
+                        officiis laudantium repudiandae assumenda distinctio cumque!</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 rounded-3 border-start border-5 border-white" style="background-color: #1D3344;">
+            <div class="details">
+                <br>
+                <li class="list-unstyled ">
+                    <ol class="text-white"><i class="fas fa-envelope-open-text"></i>mshabeeb4@gmail.com</ol>
+                    <ol class="text-white"><i class="fas fa-location-arrow"></i>+18111828558</ol>
+                    <ol class="text-white"><i class="fab fa-linkedin"></i>+Melayil House laloth p.o kondotty</ol>
+                    <ol class="text-white"><i class="fab fa-github"></i>&nbsp;&nbsp;www.linkedin.com</ol>
+                    <ol class="text-white"><i class="fab fa-stack-overflow"></i>&nbsp;&nbsp;github.com</ol>
+                    {% comment %} <ol class="text-white">stackowerflow.com</ol> {% endcomment %}
+                    {% comment %} <ol class="text-white">stackowerflow.com</ol> {% endcomment %}
+                </li>
+                <!-- <h5>&nbsp;&nbsp;mshabeeb4@gmail.com</h5>
+                <h5><i class="fas fa-phone"></i>&nbsp;&nbsp;+18111828558</h5>
+                <h5>&nbsp;&nbsp;+Melayil House laloth p.o kondotty</h5>
+                <h5>&nbsp;&nbsp;www.linkedin.com</h5>
+                <h5>github.com</h5>
+                <h5>stackowerflow.com</h5> -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 mt-4 p-0">
+            <div class="col-md-2">
+                <i class="fas fa-snowboarding fs-3"></i>
+                <h3 class="d-inline-flex mt-3">Skills</h3>
+            </div>
+            <ol class="list-unstyled skills">
+                <li>Front-End Technology</li>
+                <li>Developent Languages</li>
+                <li>Database And Cache</li>
+                <li>Soft Skills</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
