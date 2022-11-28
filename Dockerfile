@@ -4,7 +4,7 @@ EXPOSE 80
 
 WORKDIR /cvforyou_2
 
-COPY requirements.py /cvforyou_2
+COPY requirements.txt /cvforyou_2
 
 RUN pip3 install -r requirements.txt --no-cache-dir
 
