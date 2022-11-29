@@ -8,3 +8,6 @@ this is a dev ready Django contaniner which is having some sample web aaplicaion
 2. cd Docker-Django
 3. docker build . -t django:latest
 
+
+
+
