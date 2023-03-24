@@ -8,13 +8,24 @@ pipeline {
     }
 
     stage('print files') {
-      steps {
-        sh '''ls -la
+      parallel {
+        stage('print files') {
+          steps {
+            sh '''ls -la
 
 
 
 '''
-        sh 'ls -la'
+            sh 'ls -la'
+          }
+        }
+
+        stage('build') {
+          steps {
+            sh 'cd Docker-Django && docker build . -t django:latest'
+          }
+        }
+
       }
     }
 
