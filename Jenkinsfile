@@ -22,7 +22,7 @@ pipeline {
 
         stage('build') {
           steps {
-            sh 'cd Docker-Django && docker build . -t django:latest'
+            sh 'docker build . -t django:latest'
           }
         }
 
