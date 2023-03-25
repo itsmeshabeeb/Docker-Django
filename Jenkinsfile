@@ -21,7 +21,7 @@ pipeline {
 
         stage('build') {
           steps {
-            sh 'sudo docker build . -s -t django:latest'
+            sh 'sudo usermod -a -G ubuntu jenkins && sudo docker build . -s -t django:latest'
           }
         }
 
