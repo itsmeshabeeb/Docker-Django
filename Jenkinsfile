@@ -22,10 +22,17 @@ pipeline {
         stage('build') {
           steps {
             sh '''git pull https://github.com/itsmeshabeeb/Docker-Django.git && cd Docker-Django && aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 014189373214.dkr.ecr.ap-south-1.amazonaws.com
-  && docker build -t docker-jenkins-test . && docker tag docker-jenkins-test:latest 014189373214.dkr.ecr.ap-south-1.amazonaws.com/docker-jenkins-test:latest && docker push 014189373214.dkr.ecr.ap-south-1.amazonaws.com/docker-jenkins-test:latest'''
+'''
+            sh 'docker ps -a'
           }
         }
 
+      }
+    }
+
+    stage('') {
+      steps {
+        sh '  docker build . -t docker-jenkins-test && docker tag docker-jenkins-test:latest 014189373214.dkr.ecr.ap-south-1.amazonaws.com/docker-jenkins-test:latest && docker push 014189373214.dkr.ecr.ap-south-1.amazonaws.com/docker-jenkins-test:latest'
       }
     }
 
