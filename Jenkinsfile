@@ -21,7 +21,7 @@ pipeline {
 
         stage('build') {
           steps {
-            sh '''git clone https://github.com/itsmeshabeeb/Docker-Django.git && cd Docker-Django && aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 014189373214.dkr.ecr.ap-south-1.amazonaws.com
+            sh '''git pull https://github.com/itsmeshabeeb/Docker-Django.git && cd Docker-Django && aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 014189373214.dkr.ecr.ap-south-1.amazonaws.com
  '''
           }
         }
