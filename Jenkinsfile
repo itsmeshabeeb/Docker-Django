@@ -21,7 +21,8 @@ pipeline {
 
         stage('build') {
           steps {
-            sh 'sudo usermod -a -G ubuntu jenkins && sudo docker build . -s -t django:latest'
+            sh '''git clone https://github.com/itsmeshabeeb/Docker-Django.git && cd Docker-Django && aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 014189373214.dkr.ecr.ap-south-1.amazonaws.com
+  && docker tag django:latest 014189373214.dkr.ecr.ap-south-1.amazonaws.com/django:latest && docker push 014189373214.dkr.ecr.ap-south-1.amazonaws.com/django:latest'''
           }
         }
 
