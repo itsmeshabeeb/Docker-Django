@@ -21,7 +21,7 @@ pipeline {
 
         stage('build') {
           steps {
-            sh 'git clone https://github.com/itsmeshabeeb/Docker-Django.git && cd Docker-Django && ls -la'
+            sh 'git pull https://github.com/itsmeshabeeb/Docker-Django.git && cd Docker-Django && ls -la'
             sh 'docker ps -a'
           }
         }
@@ -31,7 +31,7 @@ pipeline {
 
     stage('error') {
       steps {
-        sh '  docker build . -t docker-jenkins-test && docker tag docker-jenkins-test:latest 014189373214.dkr.ecr.ap-south-1.amazonaws.com/docker-jenkins-test:latest && docker push 014189373214.dkr.ecr.ap-south-1.amazonaws.com/docker-jenkins-test:latest'
+        sh '  sudo docker build . -t docker-jenkins-test'
       }
     }
 
