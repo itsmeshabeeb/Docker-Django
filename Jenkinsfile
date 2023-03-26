@@ -22,7 +22,7 @@ pipeline {
         stage('cloning') {
           steps {
             sh 'git pull https://github.com/itsmeshabeeb/Docker-Django.git && cd Docker-Django && ls -la'
-            sh 'sudo docker ps'
+            sh 'sudo docker ps -S'
           }
         }
 
