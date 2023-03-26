@@ -19,17 +19,17 @@ pipeline {
           }
         }
 
-        stage('build') {
+        stage('cloning') {
           steps {
             sh 'git pull https://github.com/itsmeshabeeb/Docker-Django.git && cd Docker-Django && ls -la'
-            sh 'docker ps -a'
+            sh 'sudo docker ps'
           }
         }
 
       }
     }
 
-    stage('error') {
+    stage('building') {
       steps {
         sh '  sudo docker build . -t docker-jenkins-test'
       }
